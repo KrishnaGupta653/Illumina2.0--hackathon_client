@@ -125,7 +125,9 @@ useEffect(() => {
 
 
                 {/* ✅ Default Route */}
-                <Route path="*" element={<Navigate to={isProfileComplete ? "/portal" : "/fill-profile"} replace />} />
+{/*                 <Route path="*" element={<Navigate to={isProfileComplete ? "/portal" : "/fill-profile"} replace />} /> */}
+                 {/* ✅ Testing*/}
+                <Route path="*" element={<Navigate to="/portal" replace />} />
             </Routes>
         </Router>
     );
